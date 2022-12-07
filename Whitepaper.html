@@ -84,9 +84,22 @@
 
 <body>
   <div class="main">
+	  <header class="hero">  
+  
+  <div class="hero-inner">
+    
+    <h1 class="hero-headline"></h1>
+    
+    
+    
+  </div>
+  
+</header>
+<div class="mainbody">
     <div class="main-heading">
-      <h2 class="main-heading-content">White Papers</h2>
-      <p>The latest about Aquamap’s new Articles.</p>
+      <h2 class="main-heading-content" style="text-align: center;">White Papers</h2>
+		<img src="https://aquamap.iitm.ac.in/images/custom-seperator.png">
+      <p style="text-align: center;">The Latest Articles on Water and Environment.</p>
      </div>
     
     <div id="myBtnContainer" style="text-align:center; padding: 20px 0px 20px 0px;">
@@ -112,7 +125,7 @@
       </div>
     </div>
     <div class="dropdown">
-        <button class="btn-main">Country<i class="fa-solid fa-angle-down" ></i></button>
+        <button class="btn-main">Region<i class="fa-solid fa-angle-down" ></i></button>
         <div class="dropdown-content">
         <li><button class="btn" onclick="filterSelection('India'),('Ascending')"> India</button></li>
         <li><button class="btn" onclick="filterSelection('Global')"> Global</button></li>
@@ -123,17 +136,7 @@
     </div>
 
     <!-- hero image -->
-<header class="hero">  
-  
-  <div class="hero-inner">
-    
-    <h1 class="hero-headline"></h1>
-    
-    
-    
-  </div>
-  
-</header>
+
 		</br>
 <div class="row"> 
   <div class="publicationslist">
@@ -142,42 +145,64 @@
       
   
 
-      <li>
-        <a href="https://www.aims-cgwb.org/images/IISc-fianl-Report-2-33.pdf"  style="color:#000"   target="_blank" class="outerlink">Evaluation of Scheme of Ground Water Management & Regulation</a></li>
-      <hr size="5">
-      <li>
-        <a href="https://mohua.gov.in/upload/uploadfiles/files/AMRUT-Operational-Guidelines.pdf"  style="color: #000" target="_blank" class="outerlink">Atal Mission for Rejuvenation and Urban Transformation</a></li>
-      <hr size="5">
-      <li>
-        <a href="http://cwc.gov.in/sites/default/files/nwauser/nwp-lectnote6.pdf" style="color: #000" target="_blank" class="outerlink">NATIONAL WATER POLICY</a></li>
-      <hr size="5">
-      <li>
-        <a href="https://jsactr.mowr.gov.in/website/help-documents/Concept-Note-Jal-Shakti-Kendras-for-MIS-Portal.pdf" style="color: #000" target="_blank" class="outerlink"> Setting up of Jal Shakti Kendras Under "JAL SHAKTI ABHIYAN: CATCH THE RAIN" Campaign</a></li>
-      <hr size="5">
-      <li>
-        <a href="https://jsactr.mowr.gov.in/website/help-documents/Scientific-Water-Conservation-Plan-for-Jal-Shakti-Abhiyan-Catch-the-Rain-campaign.pdf" style="color: #000" target="_blank" class="outerlink"> Guidelines for Preparation of GIS Based Water Conservation Plans and Inventory of Water Bodies for Districts Under "JAL SHAKTI ABHIYAN: CATCH THE RAIN"Campaign</a></li>
-      <hr size="5">
-      <li>
-        <a href="https://jsactr.mowr.gov.in/website/help-documents/KVK.pdf"  style="color: #000" target="_blank" class="outerlink"> Krishi Vigyan Kendra & Melas Under "JAL SHAKTI ABHIYAN: CATCH THE RAIN" Campaign</a></li>
-      <hr size="5">
-      <li>
-        <a href="https://jsactr.mowr.gov.in/website/help-documents/Urban-Waste-Water-Resuse.pdf"  style="color: #000" target="_blank" class="outerlink">Urban Wastewater Reuse Under "JAL SHAKTI ABHIYAN: CATCH THE RAIN"Campaign</a></li>
-      <hr size="5">
-      <li>
-        <a href="https://jsactr.mowr.gov.in/website/help-documents/springshed.pdf"  style="color: #000" target="_blank" class="outerlink">Springshed Management Under "JAL SHAKTI ABHIYAN: CATCH THE RAIN" Campaign</a></li>
-      <hr size="5">
-      <li>
-        <a href="http://nwm.gov.in/"  style="color: #000" target="_blank" class="outerlink">National Mission Water</a></li>
-      <hr size="5">
-      <li>
-        <a href="https://www.iahr.org/library/infor?pid=20505"  style="color: #000" target="_blank" class="outerlink">Hydraulic Structures at a Crossroads Towards the SDGs</a></li>
-      <hr size="5">
-      <li>
-        <a href="https://iahr.oss-accelerate.aliyuncs.com/library/AnythingElse/WhitePaper/2021_1_Democratization_Hydro_Environment_Observations_Data.pdf" style="color: #000"  target="_blank" class="outerlink">Pathways Towards Democratization of Hydro-environment Observations and Data</a></li>
-      <hr size="5">
-      <li>
-        <a href="https://iahr.oss-accelerate.aliyuncs.com/upload/file/20200803/1596445173675976.pdf"  style="color: #000" target="_blank" class="outerlink">Climate Change Adaptation in Water Engineering</a></li>
-      <hr size="5">
+      <li class="column India">
+		<div style="width: 100%; margin-top: -4px;">
+        <a href="https://www.aims-cgwb.org/images/IISc-fianl-Report-2-33.pdf"  style="color:#000"   target="_blank" class="outerlink">Evaluation of Scheme of Ground Water Management & Regulation</a><hr size="5"></div></li>
+      
+      <li class="column India">
+		<div style="width: 100%; margin-top: -4px;">
+        <a href="https://mohua.gov.in/upload/uploadfiles/files/AMRUT-Operational-Guidelines.pdf"  style="color: #000" target="_blank" class="outerlink">Atal Mission for Rejuvenation and Urban Transformation</a><hr size="5"></div></li>
+      
+		  
+      <li class="column India">
+		<div style="width: 100%; margin-top: -4px;">
+        <a href="http://cwc.gov.in/sites/default/files/nwauser/nwp-lectnote6.pdf" style="color: #000" target="_blank" class="outerlink">NATIONAL WATER POLICY</a><hr size="5"></div></li>
+      
+		  
+      <li class="column India">
+		<div style="width: 100%; margin-top: -4px;">
+        <a href="https://jsactr.mowr.gov.in/website/help-documents/Concept-Note-Jal-Shakti-Kendras-for-MIS-Portal.pdf" style="color: #000" target="_blank" class="outerlink"> Setting up of Jal Shakti Kendras Under "JAL SHAKTI ABHIYAN: CATCH THE RAIN" Campaign</a><hr size="5"></div></li>
+      
+		  
+      <li class="column India">
+		<div style="width: 100%; margin-top: -4px;">
+        <a href="https://jsactr.mowr.gov.in/website/help-documents/Scientific-Water-Conservation-Plan-for-Jal-Shakti-Abhiyan-Catch-the-Rain-campaign.pdf" style="color: #000" target="_blank" class="outerlink"> Guidelines for Preparation of GIS Based Water Conservation Plans and Inventory of Water Bodies for Districts Under "JAL SHAKTI ABHIYAN: CATCH THE RAIN"Campaign</a><hr size="5"></div></li>
+      
+		  
+      <li class="column India">
+		<div style="width: 100%; margin-top: -4px;">  
+        <a href="https://jsactr.mowr.gov.in/website/help-documents/KVK.pdf"  style="color: #000" target="_blank" class="outerlink"> Krishi Vigyan Kendra & Melas Under "JAL SHAKTI ABHIYAN: CATCH THE RAIN" Campaign</a><hr size="5"></div></li>
+      
+		  
+      <li class="column India">
+		<div style="width: 100%; margin-top: -4px;">
+        <a href="https://jsactr.mowr.gov.in/website/help-documents/Urban-Waste-Water-Resuse.pdf"  style="color: #000" target="_blank" class="outerlink">Urban Wastewater Reuse Under "JAL SHAKTI ABHIYAN: CATCH THE RAIN"Campaign</a><hr size="5"></div></li>
+      
+		  
+      <li class="column India">
+		<div style="width: 100%; margin-top: -4px;">
+        <a href="https://jsactr.mowr.gov.in/website/help-documents/springshed.pdf"  style="color: #000" target="_blank" class="outerlink">Springshed Management Under "JAL SHAKTI ABHIYAN: CATCH THE RAIN" Campaign</a><hr size="5"></div></li>
+      
+		  
+      <li class="column India">
+		<div style="width: 100%; margin-top: -4px;">
+        <a href="http://nwm.gov.in/"  style="color: #000" target="_blank" class="outerlink">National Mission Water</a><hr size="5"></div></li>
+      
+		  
+      <li class="column Global">
+		<div style="width: 100%; margin-top: -4px;">
+        <a href="https://www.iahr.org/library/infor?pid=20505"  style="color: #000" target="_blank" class="outerlink">Hydraulic Structures at a Crossroads Towards the SDGs</a><hr size="5"></div></li>
+      
+		  
+      <li class="column Global">
+		<div style="width: 100%; margin-top: -4px;">
+        <a href="https://iahr.oss-accelerate.aliyuncs.com/library/AnythingElse/WhitePaper/2021_1_Democratization_Hydro_Environment_Observations_Data.pdf" style="color: #000"  target="_blank" class="outerlink">Pathways Towards Democratization of Hydro-environment Observations and Data</a><hr size="5"></div></li>
+      
+		  
+      <li class="column Global">
+		<div style="width: 100%; margin-top: -4px;">
+        <a href="https://iahr.oss-accelerate.aliyuncs.com/upload/file/20200803/1596445173675976.pdf"  style="color: #000" target="_blank" class="outerlink">Climate Change Adaptation in Water Engineering</a><hr size="5"></div></li>
+      
 
       </ul>
     
@@ -256,9 +281,9 @@ p{
 
 /* Center website */
 .main {
-  max-width: 1000px;
+  /*max-width: 1000px;*/
   margin: auto;
-  padding:30px 0px 30px 0px;
+  /*padding:30px 0px 30px 0px;*/
 }
 
 h1 {
@@ -297,6 +322,11 @@ img{
     width: auto;
   
 }
+	.mainbody{
+		max-width: 1000px;
+		margin: auto;
+		padding-top: 30px;
+	}
 
 /* The "show" class is added to the filtered elements */
 .show {
@@ -406,6 +436,10 @@ svg {
   
 
 }
+	.publicationslist ul{
+		padding-left: 0px !important;
+	
+	}
 .a{
   text-decoration: none;
 }
@@ -506,7 +540,7 @@ svg {
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 40vh;
+  height: 50vh;
 /*   background-color: #eee; */
   display: flex;
   justify-content: center;

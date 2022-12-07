@@ -83,9 +83,21 @@
 
 <body>
   <div class="main">
+<header class="hero">  
+  
+  <div class="hero-inner">
+    
+    <h1 class="hero-headline"></h1>
+    
+    
+  </div>
+  
+</header>
+<div class="mainbody">	  
     <div class="main-heading">
       <h2 class="main-heading-content">Publications</h2>
-      <p>The latest about Aquamap’s new Articles.</p>
+		<img src="https://aquamap.iitm.ac.in/images/custom-seperator.png">
+      <p style="text-align: center;">The Latest Articles on Water and Environment.</p>
      </div>
     
     <div id="myBtnContainer" style="text-align:center; padding: 20px 0px 20px 0px;">
@@ -111,9 +123,9 @@
       </div>
     </div>
     <div class="dropdown">
-        <button class="btn-main">Country<i class="fa-solid fa-angle-down" ></i></button>
+        <button class="btn-main">Region<i class="fa-solid fa-angle-down" ></i></button>
         <div class="dropdown-content">
-        <li><button class="btn" onclick="filterSelection('India'),('Ascending')"> India</button></li>
+        <li><button class="btn" onclick="filterSelection('India')" > India</button></li>
         <li><button class="btn" onclick="filterSelection('Global')"> Global</button></li>
         </div>
     </div> 
@@ -122,43 +134,35 @@
     </div>
 
     <!-- hero image -->
-<header class="hero">  
-  
-  <div class="hero-inner">
-    
-    <h1 class="hero-headline"></h1>
-    
-    
-  </div>
-  
-</header>
+
 <br>
 <div class="row"> 
   <div class="publicationslist">
   <ul class="listspoint" style="list-style-type: disc">
       
-      <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S1537511011000778" class="outerlink"> Development of unmanned airboat for water-quality mapping </a></li>  
-      <hr size="4">
-      <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S2211285519308249" class="outerlink"> High-performance triboelectric nanogenerators for self-powered, in-situ and real-time water quality mapping </a></li>  
-      <hr size="5">
-      <li><a href="http://cgwb.gov.in/WQ/WQMAPS/Arsenic.pdf" class="outerlink"> ARSENIC HOT SPOT IN GROUND WATER IN INDIA </a></li>  
-      <hr size="5">
-      <li><a href="http://cgwb.gov.in/WQ/WQMAPS/EC%20INDIA%202015.jpg" class="outerlink"> Disytribution of Electrical conductivity in india </a></li>  
-      <hr size="5">
-      <li><a href="http://cgwb.gov.in/WQ/WQMAPS/FLUORIDE.jpg" class="outerlink"> Locations of flouride in ground water </a></li>  
-      <hr size="5">
-      <li><a href="http://cgwb.gov.in/WQ/WQMAPS/IRON%202015%20N.jpg" class="outerlink"> Locations of iron in ground water </a></li>  
-      <hr size="5">
-      <li><a href="http://cgwb.gov.in/WQ/WQMAPS/nitrate%202015.jpg" class="outerlink"> Locations of nitrate in ground water </a></li>  
-      <hr size="5">
-      <li><a href="http://cgwb.gov.in/WQ/WQMAPS/CHLORIDE%202015.jpg" class="outerlink"> Distribution chloride in shallow ground water aquifer </a></li>  
-      <hr size="5">
-      <li><a href="https://www.ircc.iitb.ac.in/IRCC-Webpage/PDF/update/Issue1_2007/water-quality-monitoring.html" class="outerlink"> Polysensor - A Sensor System for Water Quality Monitoring </a></li>  
-      <hr size="5">
-      <li><a href="https://www.iitmandi.ac.in/ISTP/projects/2017/reports/Group%2001.pdf" class="outerlink"> Improving Water Quality Treatment and Monitoring Techniques in Rural Himachal Pradesh Villages </a></li>  
-      <hr size="5">
-      <li><a href="https://iopscience.iop.org/article/10.1088/1757-899X/121/1/012019" class="outerlink"> Water quality monitoring: A comparative case study of municipal and Curtin Sarawak's lake samples </a></li>  
-      <hr size="5">
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.sciencedirect.com/science/article/abs/pii/S1537511011000778" class="outerlink" target="_blank"> Development of unmanned airboat for water-quality mapping </a><hr size="5"></div>
+	  </li>  
+      
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.sciencedirect.com/science/article/abs/pii/S2211285519308249" class="outerlink" target="_blank"> High-performance triboelectric nanogenerators for self-powered, in-situ and real-time water quality mapping </a><hr size="5"></div></li>  
+    
+      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="http://cgwb.gov.in/WQ/WQMAPS/Arsenic.pdf" class="outerlink" target="_blank"> Arsenic Hot Spot in Ground Water in India </a><hr size="5"></div></li>  
+      
+      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="http://cgwb.gov.in/WQ/WQMAPS/EC%20INDIA%202015.jpg" class="outerlink" target="_blank"> Disytribution of Electrical conductivity in india </a><hr size="5"></div></li>  
+     
+      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="http://cgwb.gov.in/WQ/WQMAPS/FLUORIDE.jpg" class="outerlink" target="_blank"> Locations of flouride in ground water </a><hr size="5"></div></li>  
+      
+      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="http://cgwb.gov.in/WQ/WQMAPS/IRON%202015%20N.jpg" class="outerlink" target="_blank"> Locations of iron in ground water </a><hr size="5"></div></li>  
+      
+      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="http://cgwb.gov.in/WQ/WQMAPS/nitrate%202015.jpg" class="outerlink" target="_blank"> Locations of nitrate in ground water </a><hr size="5"></div></li>  
+     
+      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="http://cgwb.gov.in/WQ/WQMAPS/CHLORIDE%202015.jpg" class="outerlink" target="_blank"> Distribution chloride in shallow ground water aquifer </a><hr size="5"></div></li>  
+      
+      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="https://www.ircc.iitb.ac.in/IRCC-Webpage/PDF/update/Issue1_2007/water-quality-monitoring.html" class="outerlink" target="_blank"> Polysensor - A Sensor System for Water Quality Monitoring </a><hr size="5"></div></li>  
+      
+      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="https://www.iitmandi.ac.in/ISTP/projects/2017/reports/Group%2001.pdf" class="outerlink" target="_blank"> Improving Water Quality Treatment and Monitoring Techniques in Rural Himachal Pradesh Villages </a><hr size="5"></div></li>  
+      
+      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="https://iopscience.iop.org/article/10.1088/1757-899X/121/1/012019" class="outerlink" target="_blank"> Water quality monitoring: A comparative case study of municipal and Curtin Sarawak's lake samples </a><hr size="5"></div></li>  
+     
     
   </ul>
 </div>
@@ -235,9 +239,9 @@ p{
 
 /* Center website */
 .main {
-  max-width: 1000px;
+  /*max-width: 1000px;*/
   margin: auto;
-  padding:30px 0px 30px 0px;
+  /*padding:30px 0px 30px 0px;*/
 }
 
 h1 {
@@ -276,6 +280,11 @@ img{
     width: auto;
   
 }
+	.mainbody{
+		max-width: 1000px;
+		margin: auto;
+		padding-top: 30px;
+	}
 
 /* The "show" class is added to the filtered elements */
 .show {
@@ -382,9 +391,13 @@ svg {
     width: 100%;
 }
 .publicationslist{
-  
+ 
 
 }
+	.publicationslist ul{
+		padding-left: 0px !important;
+	
+	}
 .outerlink {
   background-image: linear-gradient(
     to right,
@@ -471,6 +484,7 @@ svg {
   font-weight: 500;
   text-transform: capitalize;
   color: #000;
+	text-align: center;
 }
 .main-heading{
   text-align: center;
@@ -482,7 +496,7 @@ svg {
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 40vh;
+  height: 50vh;
 /*   background-color: #eee; */
   display: flex;
   justify-content: center;
@@ -541,8 +555,11 @@ svg {
 /* mobile res */
 @media only screen and (max-width: 600px) {
   .main{
-    padding: 10px;
+    padding: 0px;
   }
+	.mainbody{
+		padding:10px;
+	}
   .nav-item{
     font-size: 16px;
   }
@@ -584,7 +601,6 @@ function w3RemoveClass(element, name) {
   }
   element.className = arr1.join(" ");
 }
-
 
 // Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
