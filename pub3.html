@@ -105,20 +105,23 @@
         <button class="btn" onclick="filterSelection('all')"> Show all</button>
       </div>
       
-      <!-- search box -->
-    <div class="dropdown">
-      <form role="search" id="form">
-        <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
-        <button class="search-btn">
-          <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
-        </button>
-    </div>
+        <!--<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">-->
 
-    <div class="dropdown">
+      <!-- search box -->
+      <div class="dropdown">
+        <form role="search" id="form">
+          <!--<input type="text" id="mySearch" name="q" onkeyup="myFunction()" placeholder="Search..." aria-label="Search through site content">-->
+          <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category" style="border: none;">
+          <button class="search-btn">
+            <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+          </button>
+      </div>
+    
+      <div class="dropdown">
       <button class="btn-main">Year<i class="fa-solid fa-angle-down" ></i></button>
       <div class="dropdown-content">
-        <li><button class="btn" onclick="filterSelection('Ascending')"> Ascending</button></li>
-        <li><button class="btn" onclick="filterSelection('Decending')"> Decending</button></li>       
+        <li><button class="btn" onclick="filterSelection('Ascending')"> Latest</button></li>
+        <li><button class="btn" onclick="filterSelection('Desending')"> Oldest</button></li>       
         
       </div>
     </div>
@@ -138,35 +141,132 @@
 <br>
 <div class="row"> 
   <div class="publicationslist">
-  <ul class="listspoint" style="list-style-type: disc">
+  <ul class="listspoint" style="list-style-type: disc" id="myMenu">
       
-      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.sciencedirect.com/science/article/abs/pii/S1537511011000778" class="outerlink" target="_blank"> Development of unmanned airboat for water-quality mapping </a><hr size="5"></div>
-	  </li>  
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.sciencedirect.com/science/article/abs/pii/S1537511011000778" class="outerlink" target="_blank"> Development of unmanned airboat for water-quality mapping </a><hr size="5"></div></li>  
       
       <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.sciencedirect.com/science/article/abs/pii/S2211285519308249" class="outerlink" target="_blank"> High-performance triboelectric nanogenerators for self-powered, in-situ and real-time water quality mapping </a><hr size="5"></div></li>  
+      
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.ircc.iitb.ac.in/IRCC-Webpage/PDF/update/Issue1_2007/water-quality-monitoring.html" class="outerlink" target="_blank"> Polysensor - A Sensor System for Water Quality Monitoring </a><hr size="5"></div></li>  
+      
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.iitmandi.ac.in/ISTP/projects/2017/reports/Group%2001.pdf" class="outerlink" target="_blank"> Improving Water Quality Treatment and Monitoring Techniques in Rural Himachal Pradesh Villages </a><hr size="5"></div></li>  
+      
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://iopscience.iop.org/article/10.1088/1757-899X/121/1/012019" class="outerlink" target="_blank"> Water Quality Monitoring: A Comparative Case Study of Municipal and Curtin Sarawak's Lake Samples </a><hr size="5"></div></li>  
+     
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.downtoearth.org.in/factsheet/river-basins-under-pressure-69835" class="outerlink" target="_blank"> Rain Water Basins Under Pressure </a><hr size="5"></div></li>  
+      
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.mdpi.com/2073-4441/11/10/1959" class="outerlink" target="_blank"> Urban Hydroinformatics: Past, Present and Future </a><hr size="5"></div></li>  
+     
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://iwaponline.com/jh/article/18/4/599/30029/Big-data-and-hydroinformatics" class="outerlink" target="_blank"> Big Data and Hydroinformatics </a><hr size="5"></div></li>  
+      
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.sciencedirect.com/science/article/pii/S0043135417301483" class="outerlink" target="_blank"> Urban Rainwater Harvesting Systems: Research, Implementation and Future Perspectives </a><hr size="5"></div></li>  
+      
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.sciencedirect.com/science/article/pii/S001191640900575X" class="outerlink" target="_blank">Opportunities in Rainwater Harvesting </a><hr size="5"></div></li>  
+     
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://link.springer.com/article/10.1007/s11269-009-9542-y" class="outerlink" target="_blank"> Assessing the Potential for Rainwater Harvesting</a><hr size="5"></div></li>  
     
-      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="http://cgwb.gov.in/WQ/WQMAPS/Arsenic.pdf" class="outerlink" target="_blank"> Arsenic Hot Spot in Ground Water in India </a><hr size="5"></div></li>  
-      
-      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="http://cgwb.gov.in/WQ/WQMAPS/EC%20INDIA%202015.jpg" class="outerlink" target="_blank"> Disytribution of Electrical conductivity in india </a><hr size="5"></div></li>  
-     
-      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="http://cgwb.gov.in/WQ/WQMAPS/FLUORIDE.jpg" class="outerlink" target="_blank"> Locations of flouride in ground water </a><hr size="5"></div></li>  
-      
-      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="http://cgwb.gov.in/WQ/WQMAPS/IRON%202015%20N.jpg" class="outerlink" target="_blank"> Locations of iron in ground water </a><hr size="5"></div></li>  
-      
-      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="http://cgwb.gov.in/WQ/WQMAPS/nitrate%202015.jpg" class="outerlink" target="_blank"> Locations of nitrate in ground water </a><hr size="5"></div></li>  
-     
-      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="http://cgwb.gov.in/WQ/WQMAPS/CHLORIDE%202015.jpg" class="outerlink" target="_blank"> Distribution chloride in shallow ground water aquifer </a><hr size="5"></div></li>  
-      
-      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="https://www.ircc.iitb.ac.in/IRCC-Webpage/PDF/update/Issue1_2007/water-quality-monitoring.html" class="outerlink" target="_blank"> Polysensor - A Sensor System for Water Quality Monitoring </a><hr size="5"></div></li>  
-      
-      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="https://www.iitmandi.ac.in/ISTP/projects/2017/reports/Group%2001.pdf" class="outerlink" target="_blank"> Improving Water Quality Treatment and Monitoring Techniques in Rural Himachal Pradesh Villages </a><hr size="5"></div></li>  
-      
-      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="https://iopscience.iop.org/article/10.1088/1757-899X/121/1/012019" class="outerlink" target="_blank"> Water quality monitoring: A comparative case study of municipal and Curtin Sarawak's lake samples </a><hr size="5"></div></li>  
-     
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.sciencedirect.com/science/article/abs/pii/S004313541200471X" class="outerlink" target="_blank"> Performance of a Large Building Rainwater Harvesting System</a><hr size="5"></div></li>  
+  
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.researchgate.net/profile/Dinesh-M/publication/46534226_Rainwater_harvesting_in_India_Some_critical_issues_for_basin_planning_and_research/links/54d19d380cf28370d0e0dc81/Rainwater-harvesting-in-India-Some-critical-issues-for-basin-planning-and-research.pdf" class="outerlink" target="_blank"> Rainwater Harvesting in India: Some Critical Issues for Basin Planning and Research</a><hr size="5"></div></li>  
     
-  </ul>
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.sciencedirect.com/science/article/abs/pii/S1462075800000303" class="outerlink" target="_blank">Technologies for Domestic Wastewater Recycling</a><hr size="5"></div></li>  
+    
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://pubs.rsc.org/en/content/articlehtml/2012/ra/c2ra20340e" class="outerlink" target="_blank">Chemical Treatment Technologies for Waste-water Recycling an Overview </a><hr size="5"></div></li>
+    
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0043135407002539" class="outerlink" target="_blank">Removal of Antibiotics in Conventional and Advanced Wastewater Treatment: Implications for Environmental Discharge and Wastewater Recycling</a><hr size="5"></div></li>  
+    
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://link.springer.com/article/10.1007/s11356-018-2629-3" class="outerlink" target="_blank"> Wetlands for Wastewater Treatment and Subsequent Recycling of Treated Effluent: a Review</a><hr size="5"></div></li> 
+   
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://pubs.acs.org/doi/abs/10.1021/es403899t" class="outerlink" target="_blank">Benchmarking Organic Micropollutants in Wastewater, Recycled Water and Drinking Water within Vitro Bioassays</a><hr size="5"></div></li>  
+    
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=solid+waste+management&oq=solid+waste+#d=gs_qabs&t=1669610792334&u=%23p%3DtfvVhdMzgWIJ" class="outerlink" target="_blank"> Solid Waste Management </a><hr size="5"></div></li>  
+   
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://journals.sagepub.com/doi/abs/10.1177/0734242x12437569" class="outerlink" target="_blank"> Comparative Analysis of Solid Waste Management in 20 Cities </a><hr size="5"></div></li> 
+    
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.researchgate.net/profile/Shaleen-Singhal/publication/285893254_Solid_waste_management_in_India_Status_and_future_directions/links/5f228492299bf13404927bf5/Solid-waste-management-in-India-Status-and-future-directions.pdf" class="outerlink" target="_blank"> Solid Waste Management in India: Status and Future Direction</a><hr size="5"></div></li>
+    
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.tandfonline.com/doi/full/10.1080/23311843.2016.1139434" class="outerlink" target="_blank"> Status and Challenges of Municipal Solid Waste Management in India: A Review</a><hr size="5"></div></li> 
+    
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0169204617300464" class="outerlink" target="_blank">The Role of Trees in Urban Stormwater Management </a><hr size="5"></div></li>
+   
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://link.springer.com/article/10.1007/s11814-010-0387-0" class="outerlink" target="_blank"> Urban Stormwater Quality and Treatment</a><hr size="5"></div></li>
+    
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://iwaponline.com/wst/article-abstract/46/6-7/1/9931/International-Report-Stormwater-management" class="outerlink" target="_blank">International Report: Stormwater Management</a><hr size="5"></div></li>
+    
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0043135412003569" class="outerlink" target="_blank"> Key Issues for Sustainable Urban Stormwater Management</a><hr size="5"></div></li>
+   
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0048969707005979" class="outerlink" target="_blank">Selected Stormwater Priority Pollutants a European Perspective</a><hr size="5"></div></li>
+   
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.tandfonline.com/doi/abs/10.1080/1573062X.2017.1279191" class="outerlink" target="_blank">A Review of Data-driven Approaches for Burst Detection in Water Distribution Systems</a><hr size="5"></div></li>
+   
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.researchgate.net/profile/Victor-Yamanaka/publication/268601953_Graph_Theory_Based_Algorithms_for_Water_Distribution_Network_Sectorization_Projects/links/5ea859db45851592d6a5a0d8/Graph-Theory-Based-Algorithms-for-Water-Distribution-Network-Sectorization-Projects.pdf" class="outerlink" target="_blank">Graph Theory Based Algorithms for Water Distribution Network Sectorization Projects</a><hr size="5"></div></li>
+   
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0109564102000428" class="outerlink" target="_blank">Effect of One-year Water Storage on the Surface Microhardness of Resin-modified Versus Conventional Glass-ionomer Cements</a><hr size="5"></div></li>
+    
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.nature.com/articles/nature04312" class="outerlink" target="_blank">Global Pattern of Trends in Streamflow and Water Availability in a Changing Climate</a><hr size="5"></div></li>
+   
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://books.google.co.in/books?hl=en&lr=&id=visG1yDeSooC&oi=fnd&pg=PR6&dq=water+storage&ots=-MW_JR01D0&sig=By1UZvFSL-hF-ZC39CzYwNkkXXI&redir_esc=y#v=onepage&q=water%20storage&f=false" class="outerlink" target="_blank">Ground Water and Surface Water Single Resource</a><hr size="5"></div></li>
+    
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.nature.com/articles/nature04141" class="outerlink" target="_blank">Potential Impacts of a Warming Climate on Water Availability in Snow-dominated Regions</a><hr size="5"></div></li>
+    
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.nature.com/articles/nclimate1744" class="outerlink" target="_blank">Ground Water and Climate Change</a><hr size="5"></div></li>
+   
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.sciencedirect.com/science/article/pii/S1877050916315216" class="outerlink" target="_blank">Field Monitoring and Automation Using IOT in Agriculture Domain</a><hr size="5"></div></li>
+   
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://ieeexplore.ieee.org/abstract/document/8920900" class="outerlink" target="_blank">Development of IOT for Automated Water Quality Monitoring System</a><hr size="5"></div></li>
+   
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://ijisd.journals.ekb.eg/article_252796.html" class="outerlink" target="_blank">IOT based Smart Irrigation System</a><hr size="5"></div></li>
+    
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.researchgate.net/profile/Malka-Halgamuge/publication/332762725_Adoption_of_the_Internet_of_Things_IoT_in_Agriculture_and_Smart_Farming_towards_Urban_Greening_A_Review/links/5cc84bd44585156cd7bc0e27/Adoption-of-the-Internet-of-Things-IoT-in-Agriculture-and-Smart-Farming-towards-Urban-Greening-A-Review.pdf" class="outerlink" target="_blank">Adoption of the Internet of Things (IoT) in Agriculture and Smart Farming Towards Urban Greening: A Review</a><hr size="5"></div></li>
+   
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://ieeexplore.ieee.org/abstract/document/8399118" class="outerlink" target="_blank">IOT Based Smart Crop-field Monitoring and Automation Irrigation System</a><hr size="5"></div></li>
+    
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1752-1688.1999.tb03599.x" class="outerlink" target="_blank">Automated Methods for Estimating Basefloe and Groundwater Recharge from Streamflow Records</a><hr size="5"></div></li>
+    
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.sciencedirect.com/science/article/pii/S0045653508002233" class="outerlink" target="_blank">Trace Organic Chemicals Contamination in Ground Water Recharge</a><hr size="5"></div></li>
+    
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.tandfonline.com/doi/abs/10.1080/09715010.1997.10514603" class="outerlink" target="_blank">Estimation of Natural Ground Water Recharge</a><hr size="5"></div></li>
+    
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://pubs.rsc.org/en/content/articlehtml/2017/cs/c6cs00921b" class="outerlink" target="_blank">Recent Advances in Nanomaterials for Water Protection and Monitoring</a><hr size="5"></div></li>
+   
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://ngwa.onlinelibrary.wiley.com/doi/abs/10.1111/j.1745-6584.2006.00230.x" class="outerlink" target="_blank">Well Vulnerability: A Quantitative Approach for Source Water Protection</a><hr size="5"></div></li>
+    
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://www.sciencedirect.com/science/article/pii/S0301479707003763" class="outerlink" target="_blank">Development of a Risk-based Index for Source Water Protection Planning, Which Supports the Reduction of Pathogens from Agricultural Activity Entering Water Resources</a><hr size="5"></div></li>
+    
+      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=water+rejuvenation&oq=water+rejuvena#d=gs_qabs&t=1669610434215&u=%23p%3DlAOfkOSsTHQJ" class="outerlink" target="_blank">Water Rejuvenation</a><hr size="5"></div></li>
+    
+      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="https://www.sciencedirect.com/science/article/pii/S0048969720342807" class="outerlink" target="_blank">Cleaning the River Ganga: Impact of Lockdown on Water Quality and Future Implications on River Rejuvenation Strategies</a><hr size="5"></div></li>
+    
+      <li class="column Global"><div style="width: 100%;margin-top: -4px;"><a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=sea+water+intrusion&oq=sea+water+#d=gs_qabs&t=1669610261304&u=%23p%3DpWvgViQlglwJ" class="outerlink" target="_blank">Sea Water Intrusion</a><hr size="5"></div></li>
+    
+      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="https://iccw.world/blog/rainwater-harvesting-need-relevance-and-importance/" class="outerlink" target="_blank">Rainwater Harvesting – Need, Relevance and Importance</a><hr size="5"></div></li>
+    
+      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="https://iccw.world/blog/unite-for-the-thirsty-planet/" class="outerlink" target="_blank">Unite for the Thirsty Planet</a><hr size="5"></div></li>
+   
+      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="https://iccw.world/blog/water-resources-security-mapping-for-rameswaram-island/" class="outerlink" target="_blank">Water Resources Security Mapping for Rameswaram Island</a><hr size="5"></div></li>
+    
+      <li class="column India"><div style="width: 100%;margin-top: -4px;"><a href="https://iccw.world/blog/the-2nd-post/" class="outerlink" target="_blank"> Towards Self-reliance in Water: Rainwater Harvesting</a><hr size="5"></div></li>
+    </ul>
 </div>
 </div>
+<script>
+  function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myMenu");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+  </script>
+  
     
     
   
@@ -491,7 +591,7 @@ svg {
 }
 /* hero img */
 .hero {
-  background: linear-gradient(#0006, #0006), url(knowledge-hub-images/Publications.png);
+  background: linear-gradient(#0006, #0006), url(images/Publications.png);
 /*   background-image: url(https://source.unsplash.com/2600x1200?city); */
   background-position: bottom;
   background-size: cover;
@@ -565,6 +665,9 @@ svg {
   }
   .footer-content{
     font-size: 16px;
+  }
+  .dropdown{
+    padding-bottom: 50px
   }
 }
 </style>

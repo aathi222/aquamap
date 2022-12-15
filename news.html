@@ -104,21 +104,23 @@
       <div class="dropdown">
         <button class="btn" onclick="filterSelection('all')"> Show all</button>
       </div>
+       <!--<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">--> 
       
       <!-- search box -->
-    <div class="dropdown">
-      <form role="search" id="form">
-        <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
-        <button class="search-btn">
-          <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
-        </button>
-    </div>
+      <div class="dropdown">
+        <form role="search" id="form">
+          <!--<input type="text" id="mySearch" name="q" onkeyup="myFunction()" placeholder="Search..." aria-label="Search through site content">-->
+          <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category" style="border: none;">
+          <button class="search-btn">
+            <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+          </button>
+      </div>
 
     <div class="dropdown">
       <button class="btn-main">Year<i class="fa-solid fa-angle-down" ></i></button>
       <div class="dropdown-content">
-        <li><button class="btn" onclick="filterSelection('Ascending')"> Ascending</button></li>
-        <li><button class="btn" onclick="filterSelection('Decending')"> Decending</button></li>       
+        <li><button class="btn" onclick="filterSelection('Ascending')"> Latest</button></li>
+        <li><button class="btn" onclick="filterSelection('Decending')"> Oldest</button></li>       
         
       </div>
     </div>
@@ -138,7 +140,7 @@
 <br>
 <div class="row"> 
   <div class="publicationslist">
-  <ul class="listspoint" style="list-style-type: disc">
+  <ul class="listspoint" style="list-style-type: disc" id="myMenu">
       
       <li class="column India"><div style="width: 100%; margin-top: -4px;"><a href="https://www.downtoearth.org.in/news/new-projects-launched-for-real-time-monitoring-of-air-and-water-quality-59512" class="outerlink" target="_blank"> New projects launched for real-time monitoring of air and water quality </a><hr size="5"></div></li>  
      
@@ -158,13 +160,11 @@
       
       <li class="column India"><div style="width: 100%; margin-top: -4px;"><a href="https://iccw.world/news/iccw-signs-an-mou-with-dg-takano/" class="outerlink" target="_blank">ICCW Signs an Mou with DG Takano </a><hr size="5"></div></li>  
       
-      <li class="column India"><div style="width: 100%; margin-top: -4px;"><a href="https://www.indiawaterportal.org/articles/categorising-watersheds-freshwater-ecosystem-conservation-india" class="outerlink" target="_blank"> Categorising Watersheds for Freshwater Ecosystem Conservation in India
-      </a><hr size="5"></div></li>  
+      <li class="column India"><div style="width: 100%; margin-top: -4px;"><a href="https://www.indiawaterportal.org/articles/categorising-watersheds-freshwater-ecosystem-conservation-india" class="outerlink" target="_blank"> Categorising Watersheds for Freshwater Ecosystem Conservation in India</a><hr size="5"></div></li>  
       
       <li class="column India"><div style="width: 100%; margin-top: -4px;"><a href="https://www.indiawaterportal.org/articles/cauvery-dammed-and-fractured" class="outerlink" target="_blank"> The Cauvery - Dammed and Fractured</a><hr size="5"></div></li>  
       
-      <li class="column India"><div style="width: 100%; margin-top: -4px;"><a href="https://www.indiawaterportal.org/articles/green-nod-granted-centres-ambitious-rs-72000-crore-project-greater-nicobar-island" class="outerlink" target="_blank">Green Nod Granted to Centre’s Ambitious Rs 72,000 Crore Project in Greater Nicobar Island
-      </a><hr size="5"></div></li>  
+      <li class="column India"><div style="width: 100%; margin-top: -4px;"><a href="https://www.indiawaterportal.org/articles/green-nod-granted-centres-ambitious-rs-72000-crore-project-greater-nicobar-island" class="outerlink" target="_blank">Green Nod Granted to Centre’s Ambitious Rs 72,000 Crore Project in Greater Nicobar Island</a><hr size="5"></div></li>  
       
       <li class="column India"><div style="width: 100%; margin-top: -4px;"><a href="https://www.indiawaterportal.org/articles/india-joins-mangrove-alliance-climate-mac-cop27" class="outerlink" target="_blank">India Joins Mangrove Alliance for Climate (MAC) at COP27 </a><hr size="5"></div></li>  
       
@@ -174,8 +174,8 @@
       
       <li class="column India"><div style="width: 100%; margin-top: -4px;"><a href="https://citizenmatters.in/rajokri-lake-wasteland-to-model-lake-in-a-year-32146" class="outerlink" target="_blank">Rajokri Lake: From Wasteland into Model Lake in Just a Year </a><hr size="5"></div></li>  
       
-      <li class="column India"><div style="width: 100%; margin-top: -4px;"><a href="https://www.thebetterindia.com/291731/iit-bombay-students-build-ro-hand-pump-to-generate-drinking-water-without-electricity/" class="outerlink" target="_blank">IIT-Bombay Duo Builds ‘RO Hand Pump’ That Purifies Water Without Electricity </a></div></li>  
-      <hr size="5">
+      <li class="column India"><div style="width: 100%; margin-top: -4px;"><a href="https://www.thebetterindia.com/291731/iit-bombay-students-build-ro-hand-pump-to-generate-drinking-water-without-electricity/" class="outerlink" target="_blank">IIT-Bombay Duo Builds ‘RO Hand Pump’ That Purifies Water Without Electricity </a><hr size="5"></div></li>  
+     
       <li class="column India"><div style="width: 100%; margin-top: -4px;"><a href="https://indianexpress.com/article/explained/explained-iit-bombay-to-help-treat-mumbais-sewage-with-new-tech-8050217/" class="outerlink" target="_blank">Explained: How IIT-Bombay will help Treat Mumbai’s Sewage with New Tech </a><hr size="5"></div></li>  
       
       <li class="column India"><div style="width: 100%; margin-top: -4px;"><a href="https://www.newindianexpress.com/states/odisha/2022/nov/28/asi-inspects-natamandap-damage-2522916.html" class="outerlink" target="_blank">ASI Inspects Natamandap damage </a><hr size="5"></div></li>  
@@ -208,7 +208,7 @@
       
       <li class="column India"><div style="width: 100%; margin-top: -4px;"><a href="https://www.outlookindia.com/national/iit-madras-enables-crowdsourcing-to-track-waterlogging-in-chennai-news-234497" class="outerlink" target="_blank">IIT-Madras Enables Crowdsourcing To Track Waterlogging In Chennai </a><hr size="5"></div></li>  
       
-      <li class="column India"><div style="width: 100%; margin-top: -4px;"><a href="https://www.telegraphindia.com/edugraph/news/iit-guwahati-australia-india-water-centre-western-sydney-uni-plan-water-reforms-in-india/cid/1841405" class="outerlink" target="_blank">IIT Kanpur to develop land and water restoration plan for Angul, Odisha </a><hr size="5"></div></li>  
+      <li class="column India"><div style="width: 100%; margin-top: -4px;"><a href="https://www.telegraphindia.com/edugraph/news/iit-guwahati-australia-india-water-centre-western-sydney-uni-plan-water-reforms-in-india/cid/1841405" class="outerlink" target="_blank">IIT Guwahati, Australia India Water Centre, Western Sydney Uni Plan Water Reforms in India </a><hr size="5"></div></li>  
       
       <li class="column India"><div style="width: 100%; margin-top: -4px;"><a href="https://www.thebetterindia.com/280752/iit-kanpur-innovation-nano-affordable-water-filter-for-earthen-pots/" class="outerlink" target="_blank">IIT Kanpur’s Affordable Innovation Helps Clay Pots Treat Polluted Water </a><hr size="5"></div></li>  
       
@@ -235,6 +235,23 @@
   </ul>
 </div>
 </div>
+<script>
+  function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myMenu");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+  </script>
     
     
   
