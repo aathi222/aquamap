@@ -128,7 +128,7 @@
               </div>
               <div class="col-md-3">
                 <div class="content"> 
-                    <a href="#">
+                    <a href="case.html">
                     <div class="content-overlay"></div>
                     <img class="content-image" src="knowledge-hub-images/Rectangle 133-6.png">
                     <div class="content-details fadeIn-bottom">
@@ -231,7 +231,7 @@
   
             <div class="col-md-3">
               <div class="content"> 
-                  <a href="#">
+                  <a href="events.html">
                   <div class="content-overlay"></div>
                   <img class="content-image" src="knowledge-hub-images/Rectangle 133-8.png">
                   <div class="content-details fadeIn-bottom">
@@ -543,7 +543,7 @@ img{
 
 
 /* mobile res */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .main{
     padding: 10px;
   }
@@ -553,11 +553,21 @@ img{
   .footer-content{
     font-size: 16px;
   }
+  .row{
+    padding-top: 0px !important; 
+  }
+  .col-md-3 {
+  border: white;
+  padding-top: 30px;
+  /*padding-right: 30px;
+  padding-bottom: 0px;
+  padding-left: 80px;*/
+}
 }
 </style>
 
 <script>
-    filterSelection("all")
+    filterSelection("all")   
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("column");

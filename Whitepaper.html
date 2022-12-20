@@ -106,21 +106,23 @@
       <div class="dropdown">
         <button class="btn" onclick="filterSelection('all')"> Show all</button>
       </div>
-      
-      <!-- search box -->
-    <div class="dropdown">
-      <form role="search" id="form">
-        <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
-        <button class="search-btn">
-          <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
-        </button>
-    </div>
+       <!--<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">-->  
+
+        <!-- search box -->
+        <div class="dropdown">
+          <form role="search" id="form">
+            <!--<input type="text" id="mySearch" name="q" onkeyup="myFunction()" placeholder="Search..." aria-label="Search through site content">-->
+            <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category" style="border: none;">
+            <button class="search-btn">
+              <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+            </button>
+        </div>
 
     <div class="dropdown">
       <button class="btn-main">Year<i class="fa-solid fa-angle-down" ></i></button>
       <div class="dropdown-content">
-        <li><button class="btn" onclick="filterSelection('Ascending')"> Ascending</button></li>
-        <li><button class="btn" onclick="filterSelection('Decending')"> Decending</button></li>       
+        <li><button class="btn" onclick="filterSelection('Ascending')"> Latest</button></li>
+        <li><button class="btn" onclick="filterSelection('Desending')"> Oldest</button></li>       
         
       </div>
     </div>
@@ -140,7 +142,7 @@
 		</br>
 <div class="row"> 
   <div class="publicationslist">
-    <ul style="list-style-type: disc" class="listspoint">
+    <ul style="list-style-type: disc" class="listspoint" id="myMenu">
      
       
   
@@ -156,12 +158,7 @@
 		  
       <li class="column India">
 		<div style="width: 100%; margin-top: -4px;">
-        <a href="http://cwc.gov.in/sites/default/files/nwauser/nwp-lectnote6.pdf" style="color: #000" target="_blank" class="outerlink">NATIONAL WATER POLICY</a><hr size="5"></div></li>
-      
-		  
-      <li class="column India">
-		<div style="width: 100%; margin-top: -4px;">
-        <a href="https://jsactr.mowr.gov.in/website/help-documents/Concept-Note-Jal-Shakti-Kendras-for-MIS-Portal.pdf" style="color: #000" target="_blank" class="outerlink"> Setting up of Jal Shakti Kendras Under "JAL SHAKTI ABHIYAN: CATCH THE RAIN" Campaign</a><hr size="5"></div></li>
+        <a href="http://cwc.gov.in/sites/default/files/nwauser/nwp-lectnote6.pdf" style="color: #000" target="_blank" class="outerlink">National Water Policy</a><hr size="5"></div></li>
       
 		  
       <li class="column India">
@@ -203,12 +200,61 @@
 		<div style="width: 100%; margin-top: -4px;">
         <a href="https://iahr.oss-accelerate.aliyuncs.com/upload/file/20200803/1596445173675976.pdf"  style="color: #000" target="_blank" class="outerlink">Climate Change Adaptation in Water Engineering</a><hr size="5"></div></li>
       
-
-      </ul>
+        <li class="column India">
+          <div style="width: 100%; margin-top: -4px;">
+              <a href="https://www.tandfonline.com/doi/abs/10.1080/09709274.2005.11905809"  style="color: #000" target="_blank" class="outerlink">Study of Rainwater Harvesting Potential of Zura Village of Kutch District of Gujarat</a><hr size="5"></div></li>
+      
+         <li class="column India">
+          <div style="width: 100%; margin-top: -4px;">
+           <a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=sea+water+intrusion+white+paper&btnG=#d=gs_qabs&t=1669610601200&u=%23p%3DumQFUa2hXUIJ"  style="color: #000" target="_blank" class="outerlink">Sea Water Intrusion</a><hr size="5"></div></li>
+            
+           <li class="column India">
+            <div style="width: 100%; margin-top: -4px;">
+                <a href="http://raincentre.net/downloads/pdf/RAIN_HARVESTIN_1.pdf"  style="color: #000" target="_blank" class="outerlink">Rainwater Harvesting in India with Special Reference to Urban Areas and the Chennai Experirence</a><hr size="5"></div></li>
+         
+                <li class="column India">
+                  <div style="width: 100%; margin-top: -4px;">
+                   <a href="https://resilientchennai.com/discovery-area-reports/"  style="color: #000" target="_blank" class="outerlink"> Chennai Resilience Centre</a><hr size="5"></div></li>
+              
+                   <li class="column India">
+                    <div style="width: 100%; margin-top: -4px;">
+                     <a href="http://raincentre.net/downloads/pdf/RAIN_HARVESTIN_2.pdf"  style="color: #000" target="_blank" class="outerlink">The Role of Rain Centres in Popularizing and Promoting Rainwater Harvesting in Urban Areas </a><hr size="5"></div></li>
+                 
+                     <li class="column India">
+                      <div style="width: 100%; margin-top: -4px;">
+                          <a href="http://raincentre.net/downloads/pdf/RAIN_HARVESTIN_3.pdf"  style="color: #000" target="_blank" class="outerlink">Rainwater Harvesting – Need, Relevance and Importance of Groundwater Recharge in Urban Areas with Particular Reference to Coastal Cities</a><hr size="5"></div></li>
+                    
+                    
+      <li class="column India">
+        <div style="width: 100%; margin-top: -4px;">
+            <a href="https://ficci.in/events/25232/ISP/Presentation_Salient-Features-and-water-audit-FICCI-CGWA.pdf"  style="color: #000" target="_blank" class="outerlink">Salient Feature of CGWA Notification on Groundwater Regulation and Management and Water Auditing for Industries</a><hr size="5"></div></li>
+                       
+            <li class="column India">
+              <div style="width: 100%; margin-top: -4px;">
+                  <a href="https://ficci.in/ficci-Knowledge-Paper-series.asp"  style="color:#000"   target="_blank" class="outerlink">FICCI Knowledge Paper Series</a><hr size="5"></div></li>  
+          </ul>
     
   
 </div>
 </div>
+<script>
+  function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myMenu");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+  </script>
+  
     
     
   
@@ -535,7 +581,7 @@ svg {
 }
 /* hero img */
 .hero {
-  background: linear-gradient(#0006, #0006), url( "banner images/whitepapers.png");
+  background: linear-gradient(#0006, #0006), url( "images/whitepapers.png");
 /*   background-image: url(https://source.unsplash.com/2600x1200?city); */
   background-position: bottom;
   background-size: cover;
@@ -608,6 +654,9 @@ svg {
   }
   .footer-content{
     font-size: 16px;
+  }
+  .dropdown{
+    padding-bottom: 50px
   }
 }
 </style>

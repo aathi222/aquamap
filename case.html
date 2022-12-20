@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Case Studies</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <!-- fonts calibri & montserrat -->
+    <link href="https://fonts.cdnfonts.com/css/calibri-light" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<Navbar>
+  <!-- navbar -->
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark  static-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="https://aquamap.iitm.ac.in/images/AquaMAP-6Apr22.png" alt="..." height="80">
+    </a>
+    <a class="navbar-brand" href="#">
+      <img src="https://aquamap.iitm.ac.in/images/PSA-1.png" alt="..." height="80">
+    </a>
+    <a class="navbar-brand" href="#">
+      <img src="https://aquamap.iitm.ac.in/images/IITM.png" alt="..." height="80">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Mission & Vision</a></li>
+            <li><a class="dropdown-item" href="#">Management</a></li>
+            <li>
+              <!-- <hr class="dropdown-divider"> -->
+            </li>
+            <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Activities</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Projects
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Completed Projects</a></li>
+            <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Knowledge Hub</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- navbar End -->
+</Navbar>
+  
+
+<body>
+  <div class="main">
+	  <header class="hero">  
+  
+  <div class="hero-inner">
+    
+    <h1 class="hero-headline"></h1>
+   
+    
+    
+  </div>
+  
+</header>
+<div class="mainbody">	  
+    <div class="main-heading">
+      <h2 class="main-heading-content" style="text-align: center;">Case Studies</h2>
+		<img src="https://aquamap.iitm.ac.in/images/custom-seperator.png">
+      <p style="text-align: center;">The Latest Articles on Water and Environment.</p>
+     </div>
+    
+    <div id="myBtnContainer" style="text-align:center; padding: 20px 10px 20px 10px;">
+      <div class="dropdown">
+        <button class="btn" onclick="filterSelection('all')"> Show all</button>
+      </div>
+   
+      <!--<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">-->
+      
+      <!-- search box -->
+    <div class="dropdown">
+        <form role="search" id="form">
+          <!--<input type="text" id="mySearch" name="q" onkeyup="myFunction()" placeholder="Search..." aria-label="Search through site content">-->
+          <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category" style="border: none;">
+          <button class="search-btn">
+            <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+          </button>
+      </div>
+
+    <div class="dropdown">
+      <button class="btn-main">Year<i class="fa-solid fa-angle-down" ></i></button>
+      <div class="dropdown-content">
+        <li><button class="btn" onclick="filterSelection('Ascending')">Latest</button></li>
+        <li><button class="btn" onclick="filterSelection('Desending')"> Oldest</button></li>       
+        
+      </div>
+    </div>
+    <div class="dropdown">
+        <button class="btn-main">Region<i class="fa-solid fa-angle-down" ></i></button>
+        <div class="dropdown-content">
+        <li><button class="btn" onclick="filterSelection('India')"> India</button></li>
+        <li><button class="btn" onclick="filterSelection('Global')"> Global</button></li>
+        </div>
+    </div> 
+      
+      <!-- <button class="btn" onclick="filterSelection('people')"> People</button> -->
+    </div>
+
+    <!-- hero image -->
+
+		</br>
+<div class="row"> 
+  <div class="publicationslist">
+  <ul style="list-style-type: disc" class="listspoint"  id="myMenu">
+    
+    
+
+      <li class="column India">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://www.frontiersin.org/articles/10.3389/frwa.2022.901393/full" style="color: #000" traget="_blank" class="outerlink">Advancing Hydroinformatics and Water Data Science Instruction</a><hr size="5"></div>
+      </li>
+      
+       <li class="column  Global ">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://iwaponline.com/jh/article/12/2/161/3025/Application-of-hydroinformatics-tools-for-water" style="color: #000" traget="_blank" class="outerlink">Application of Hydroinformatics Tools for Water Quality Modeling and Management</a><hr size="5"></div></li>
+     
+        <li class="column Global">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://indiaenvironment.org/our-projects/" style="color: #000" traget="_blank" class="outerlink">Our Project-E.F.I focuses on Real-time and Result Oriented Environment Conservation Projects</a><hr size="5"></div></li>
+      
+      <li class="column  Global">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://www.indiasanitationcoalition.org/resources/Case-Study-NBCC.PDF" style="color: #000" traget="_blank" class="outerlink">National Building Construction Corporation (NBCC)</a><hr size="5"></div></li>
+      
+      
+      <li class="column Global">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://www.indiasanitationcoalition.org/resources/Case-study-Domex-Toilet-Academy.pdf" style="color: #000" traget="_blank" class="outerlink">Domex Toilet Academy</a><hr size="5"></div></li>
+      
+      <li class="column Global">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://sdma.kerala.gov.in/wp-content/uploads/2020/08/Role-of-Dams-in-Kerala-Floods-IIT-Chennai-Study.pdf" style="color: #000" traget="_blank" class="outerlink">Role of Dams on the Floods of August 2018 in Periyar River Basin, Kerala</a><hr size="5"></div></li>
+      
+      <li class="column Global">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://www.indiawaterportal.org/articles/participatory-irrigation-management-brings-water-back-communities" style="color: #000" traget="_blank" class="outerlink">Participatory Irrigation Management Brings Water Back to Communities</a><hr size="5"></div></li>
+      
+      <li class="column Global">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://www.indiawaterportal.org/articles/not-all-heroes-wear-capes-some-fight-amongst-us" style="color: #000" traget="_blank" class="outerlink">Not All Heroes Wear Capes, Some Fight Amongst Us</a><hr size="5"></div></li>
+      
+      <li class="column Global">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://www.indiawaterportal.org/articles/2020-crammed-disasters-yet-filled-hope" style="color: #000" traget="_blank" class="outerlink">2020: Crammed in Disasters, Yet Filled with Hope</a><hr size="5"></div></li>
+      
+      <li class="column Global">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://www.indiawaterportal.org/articles/mnrega-helps-village-bihar-become-flood-proof" style="color: #000" traget="_blank" class="outerlink">MNREGA Helps a Village in Bihar Become Flood Proof</a><hr size="5"></div></li>
+      
+      <li class="column Global">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://www.indiawaterportal.org/articles/bringing-springs-life-ensuring-water-security-baigas-madhya-pradesh" style="color: #000" traget="_blank" class="outerlink">Bringing Springs to Life: Ensuring Water Security for Baigas in Madhya Pradesh</a><hr size="5"></div></li>
+      
+      <li class="column India">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://www.indiawaterportal.org/articles/be-wise-water-wise-students-get-mission-combat-water-crisis" style="color: #000" traget="_blank" class="outerlink">Be wise, Water Wise - Students get on a Mission to Combat Water Crisis</a><hr size="5"></div></li>
+      
+      <li class="column India">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://www.indiawaterportal.org/articles/collective-action-against-coronavirus" style="color: #000" traget="_blank" class="outerlink">Collective Action Against Coronavirus</a><hr size="5"></div></li>
+      
+      <li class="column India">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://www.indiawaterportal.org/articles/developing-effective-participatory-groundwater-monitoring-program-village-level" style="color: #000" traget="_blank" class="outerlink">Developing an Effective Participatory Groundwater Monitoring Program at Village Level</a><hr size="5"></div></li>
+     
+      <li class="column India">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://www.indiawaterportal.org/articles/how-local-democracy-solving-issues-water-southern-rajasthan" style="color: #000" traget="_blank" class="outerlink">How Local Democracy is Solving Water Issues in Southern Rajasthan</a><hr size="5"></div></li>
+      
+      <li class="column India">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://www.indiawaterportal.org/articles/all-work-and-some-play" style="color: #000" traget="_blank" class="outerlink">All Work and Some Play</a><hr size="5"></div></li>
+      
+      <li class="column India">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://www.indiawaterportal.org/articles/spending-summer-building-scalable-water-access-rural-india" style="color: #000" traget="_blank" class="outerlink">Spending a Summer Building Scalable Water Access in Rural India</a><hr size="5"></div></li>
+      
+      <li class="column India">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://www.indiawaterportal.org/articles/springing-back-life" style="color: #000" traget="_blank" class="outerlink">Springing Back to Life</a><hr size="5"></div></li>
+     
+      <li class="column India">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://www.indiawaterportal.org/articles/many-facets-fluoride-problem-chikballapur-karnataka" style="color: #000" traget="_blank" class="outerlink">The Many Facets to the Fluoride Problem in Chikkaballapur, Karnataka</a><hr size="5"></div></li>
+      
+      <li class="column India">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://www.indiawaterportal.org/articles/dumping-waste-effectively" style="color: #000" traget="_blank" class="outerlink">Dumping Waste Effectively</a><hr size="5"></div></li>
+    
+      
+      <li class="column India">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://www.indiawaterportal.org/articles/thangavel-finds-success-date-farming" style="color: #000" traget="_blank" class="outerlink">Vidarbha Farmer's Date with Success </a><hr size="5"></div></li>
+      
+        <li class="column India">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/safe-water-fight-fluorosis" style="color: #000" traget="_blank" class="outerlink">Safe Water to Fight Fluorosis</a><hr size="5"></div></li>
+         
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/setting-safe-sanitation-example-0" style="color: #000" traget="_blank" class="outerlink">Setting Safe Sanitation Example</a><hr size="5"></div></li>
+ 
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/village-steps-water-revival" style="color: #000" traget="_blank" class="outerlink">Village Steps up Water Revival Effort</a><hr size="5"></div></li>
+        
+          <li class="column India">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/indore-retains-its-cleanest-city-tag" style="color: #000" traget="_blank" class="outerlink">Indore Retains its Cleanest City Tag</a><hr size="5"></div></li>
+      
+          <li class="column India">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/village-gets-water-after-two-decades" style="color: #000" traget="_blank" class="outerlink"> Arsenic-affected Village Gets Water After Two Decades</a><hr size="5"></div></li>
+      
+          <li class="column India">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/water-cup-success-story-kakaddara-village" style="color: #000" traget="_blank" class="outerlink"> How Kakaddara Village Won Water Cup</a><hr size="5"></div></li>
+
+          <li class="column India">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/waste-away-ambikapur-shows-way" style="color: #000" traget="_blank" class="outerlink">Waste Away, Ambikapur Shows Way</a><hr size="5"></div></li>
+      
+          <li class="column India">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/village-goes-solar-solve-water-supply-issue" style="color: #000" traget="_blank" class="outerlink">Solar Power Solves Water Supply Issue</a><hr size="5"></div></li>
+      
+          <li class="column India">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/innovative-government-ngo-partnerships-development"style="color: #000" traget="_blank" class="outerlink">Innovative Government-NGO Partnerships for Development</a><hr size="5"></div></li>
+       
+          <li class="column India">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/water-makes-difference" style="color: #000" traget="_blank" class="outerlink">Well Water Makes a Difference </a><hr size="5"></div></li>
+      
+          <li class="column India">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/water-warriors-podapathar" style="color: #000" traget="_blank" class="outerlink">When Women Came Together for Water </a><hr size="5"></div></li>
+      
+          <li class="column India">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/fight-doomed-land" style="color: #000" traget="_blank" class="outerlink">The Fight for the Doomed Land </a><hr size="5"></div></li>
+        
+          <li class="column India">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/data-journey-odisha" style="color: #000" traget="_blank" class="outerlink">A Data Journey in Odisha</a><hr size="5"></div></li>
+
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/innovation-clear-fog-water-conservation" style="color: #000" traget="_blank" class="outerlink">Clearing the Fog on Water Conservation</a><hr size="5"></div></li>
+
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/every-drop-matters" style="color: #000" traget="_blank" class="outerlink">Every Drop that Matters!</a><hr size="5"></div></li>
+       
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/legal-aid-saves-triveni-sangam" style="color: #000" traget="_blank" class="outerlink">Saving Sangam from Mining</a><hr size="5"></div></li>
+       
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/better-yield-customised-rice-cultivation" style="color: #000" traget="_blank" class="outerlink">Better Yield with Customised Rice Cultivation</a><hr size="5"></div></li>
+
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/village-clears-water-course" style="color: #000" traget="_blank" class="outerlink">A Village Becomes Water Rich</a><hr size="5"></div></li>
+
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/water-profit-0" style="color: #000" traget="_blank" class="outerlink">Flourishing Informal Water Market</a><hr size="5"></div></li>
+
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/rapid-test-detect-aquaculture-virus" style="color: #000" traget="_blank" class="outerlink">New Test to Detect Aquaculture Virus</a><hr size="5"></div></li>
+
+          
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/disappearing-lakes-and-politics-corruption" style="color: #000" traget="_blank" class="outerlink">Disappearing Lakes and Politics of Corruption</a><hr size="5"></div></li>
+
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/tale-groundwater-depletion-peri-urban-hyderabad" style="color: #000" traget="_blank" class="outerlink">Looting Water for Fun</a><hr size="5"></div></li>
+        
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/fisher-village-goes-plastic-free" style="color: #000" traget="_blank" class="outerlink">Fishing Village Goes Plastic Free </a><hr size="5"></div></li>
+        
+        
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/no-more-thirst" style="color: #000" traget="_blank" class="outerlink">No More Thirst </a><hr size="5"></div></li>
+       
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.indiawaterportal.org/articles/water-worried-no-more" style="color: #000" traget="_blank" class="outerlink">Water Worried no More</a><hr size="5"></div></li>
+
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://twitter.com/GCRFWaterHub/status/1597675937042436096?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3AGCRFWaterHub%7Ctwcon%5Es1" style="color: #000" traget="_blank" class="outerlink">Seminar:Global Flood Risk Assessment-Regional Realities,8 Dec-1pm</a><hr size="5"></div></li>
+
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.thehindu.com/news/national/tamil-nadu/iit-madras-study-finds-pharmaceutical-contaminants-in-cauvery-river-water/article36874088.ece" style="color: #000" traget="_blank" class="outerlink">IIT Madras Study Finds Pharmaceutical Contaminants in Cauvery river Water</a><hr size="5"></div></li>
+
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://timesofindia.indiatimes.com/city/chennai/iit-madras-study-finds-heavy-metals-drugs-in-cauvery-river/articleshow/86857821.cms" style="color: #000" traget="_blank" class="outerlink">IIT-Madras Study Finds Heavy Metals, Drugs in Cauvery River</a><hr size="5"></div></li>
+
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://unesdoc.unesco.org/ark:/48223/pf0000130606" style="color: #000" traget="_blank" class="outerlink">Management of  University Industry Science Partnership (UNISPAR)</a><hr size="5"></div></li>
+
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.iitb.ac.in/en/research-highlight/technology-to-tackle-toxic-arsenic" style="color: #000" traget="_blank" class="outerlink">Technology to Tackle the Toxic Arsenic</a><hr size="5"></div></li>
+
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.iitb.ac.in/en/research-highlight/call-urgent-policy-change-to-revive-madurai%E2%80%99s-historical-watershed-system" style="color: #000" traget="_blank" class="outerlink">A Call for Urgent Policy Change to Revive Madurai’s Historical Watershed System</a><hr size="5"></div></li>
+
+
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.iitb.ac.in/en/research-highlight/gis-based-flood-assessment" style="color: #000" traget="_blank" class="outerlink">GIS Based Flood Assessment</a><hr size="5"></div></li>
+        
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://jalsuraksha.iitd.ac.in/" style="color: #000" traget="_blank" class="outerlink">The Water Security and Sustainable Development Hub</a><hr size="5"></div></li>
+       
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.iitk.ac.in/new/science-and-technology-of-water-harvesting-and-management-in-the-medieval-fort-of-kalinjar-in-central-india" style="color: #000" traget="_blank" class="outerlink">IIT Kanpur-Featured Research Civil Engineering</a><hr size="5"></div></li>
+
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.iitk.ac.in/new/enviromental-engineering" style="color: #000" traget="_blank" class="outerlink">IIT Kanpur-Enviromental Engineering</a><hr size="5"></div></li>
+       
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://erp.iitkgp.ac.in/InfoCellDetails/resources/external/cepdata?course_id=IIT/CEP/STC/SP/2021-2022/AG/17" style="color: #000" traget="_blank" class="outerlink">Integrated Surface-Groundwater Management for Sustainable Development</a><hr size="5"></div></li>
+        
+        
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.artofliving.org/in-en/projects/river-rejuvenation" style="color: #000" traget="_blank" class="outerlink">River Rejuvenation</a><hr size="5"></div></li>
+       
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.artofliving.org/in-en/projects/environmental-sustainability/water-conservation" style="color: #000" traget="_blank" class="outerlink">Water Conservation</a><hr size="5"></div></li>
+       
+          <li class="column Global">
+            <div style="width: 100%; margin-top: -4px;">
+          <a href="https://www.artofliving.org/environmental-care-case-studies/water-conservation" style="color: #000" traget="_blank" class="outerlink">Environment Case Studies:Water Conservation</a><hr size="5"></div></li>
+        
+          <li class="column Global">
+          <div style="width: 100%; margin-top: -4px;">
+        <a href="https://www.researchgate.net/publication/345968808_Compatibility_of_Eco-Friendly_Sustainable_Living_with_Urbanization_A_Case-study_of_The_Art_of_Living_International_Center_near_Bengaluru" style="color: #000" traget="_blank" class="outerlink">Compatibility of Eco-Friendly, Sustainable Living with Urbanization: A Case-study of The Art of Living International Center near Bengaluru</a><hr size="5"></div></li>
+        
+        <li class="column Global">
+        <div style="width: 100%; margin-top: -4px;">
+      <a href="https://www.iitg.ac.in/env/Abstract%20book%20NCOCER-2015.pdf" style="color: #000" traget="_blank" class="outerlink">National Conference on Challenges in Environmental Research</a><hr size="5"></div></li>
+   
+    
+      <li class="column Global">
+      <div style="width: 100%; margin-top: -4px;">
+    <a href="https://www.financialexpress.com/lifestyle/science/iit-guwahati-team-recommends-virtual-water-analysis-for-better-water-management-policies-in-india/2275535/lite/" style="color: #000" traget="_blank" class="outerlink">IIT-Guwahati Team Recommends Virtual Water Aalysis for Better Water Management Policies in India</a><hr size="5"></div></li>
+    
+    <li class="column Global">
+        <div style="width: 100%; margin-top: -4px;">
+      <a href="https://jpoll.ut.ac.ir/article_76562.html" style="color: #000" traget="_blank" class="outerlink">A Regression-Based Analysis to Assess the Impact of Fluoride Reach River Water on the Groundwater Aquifer Adjacent to the River</a><hr size="5"></div></li>
+
+      <li class="column Global">
+        <div style="width: 100%; margin-top: -4px;">
+      <a href="https://unstop.com/competition/case-study-jal-jeevan-hariyali-samnivesha21-indian-institute-of-technology-iit-patna-145544/amp" style="color: #000" traget="_blank" class="outerlink">Jal Jeevan Hariyali</a><hr size="5"></div></li>
+    
+      <li class="column Global">
+        <div style="width: 100%; margin-top: -4px;">
+      <a href="https://www.iitp.ac.in/images/pdf/IIT-Patna-R--D-Brochure-2017_31012018.pdf" style="color: #000" traget="_blank" class="outerlink">A Glimpse of Research Activities at IIT Patna</a><hr size="5"></div></li>
+    
+      <li class="column Global">
+        <div style="width: 100%; margin-top: -4px;">
+      <a href="http://idr.iitp.ac.in/jspui/handle/123456789/2110" style="color: #000" traget="_blank" class="outerlink">Welcome to Institutional Repository of IIT Patna</a><hr size="5"></div></li>
+    
+      <li class="column Global">
+        <div style="width: 100%; margin-top: -4px;">
+      <a href="https://www.iitbbs.ac.in/documents/IIT%20BBSR_AR_English_28072021.pdf" style="color: #000" traget="_blank" class="outerlink">IIT Bhubaneswar-Annual Report 2019-2020</a><hr size="5"></div></li>
+    
+      <li class="column Global">
+        <div style="width: 100%; margin-top: -4px;">
+      <a href="https://vmishra.people.iitgn.ac.in/water&climate/research/hydrology_monitoring.html" style="color: #000" traget="_blank" class="outerlink">Hydrologic Monitoring and Prediction</a><hr size="5"></div></li>
+    
+      <li class="column Global">
+        <div style="width: 100%; margin-top: -4px;">
+      <a href="https://vmishra.people.iitgn.ac.in/water&climate/research/urban_climate.html" style="color: #000" traget="_blank" class="outerlink">Climate and Urban Systems</a><hr size="5"></div></li>
+    
+      <li class="column Global">
+        <div style="width: 100%; margin-top: -4px;">
+      <a href="https://vmishra.people.iitgn.ac.in/water&climate/research/hydrologic_sensitivity.html" style="color: #000" traget="_blank" class="outerlink">Understanding Hydrologic Sensitivity and Change</a><hr size="5"></div></li>
+  
+   
+      <li class="column Global">
+        <div style="width: 100%; margin-top: -4px;">
+      <a href="https://m.timesofindia.com/city/chandigarh/iit-ropar-to-study-water-soil-woes-of-punjab-farmers/amp_articleshow/60199612.cms" style="color: #000" traget="_blank" class="outerlink">IIT Ropar to Study Water, Soil Woes of Punjab Farmers</a><hr size="5"></div></li>
+    
+      <li class="column Global">
+        <div style="width: 100%; margin-top: -4px;">
+      <a href="https://m.timesofindia.com/city/chandigarh/climate-change-iit-ropar-conducts-cryosphere-studies/amp_articleshow/94518564.cms" style="color: #000" traget="_blank" class="outerlink">Climate Change: IIT Ropar Conducts Cryosphere Studies</a><hr size="5"></div></li>
+    
+      <li class="column Global">
+        <div style="width: 100%; margin-top: -4px;">
+      <a href="http://ucdp.icwar.iisc.ac.in/" style="color: #000" traget="_blank" class="outerlink">Urban Climate Downscaling Portal!</a><hr size="5"></div></li>
+    </ul>
+</div>
+</div>
+<script>
+    function myFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("mySearch");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myMenu");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+    
+  
+    
+    <!-- END MAIN -->
+    </div>
+    
+    <!-- footer  -->
+    <div class="container footerbg">
+      
+      <!-- footer main  -->
+      <footer>   
+         
+        <div class=" footer">
+          
+            <div class="row">
+              <div class="col-md-2">
+                <div class="footer-logo">
+                 <img src="https://aquamap.iitm.ac.in/images/logo-1.png" class="footerlogo-1" alt="IITM">
+              </div>  
+              </div>
+              <div class="col-md-8">
+                <h4 class="footer-content">AquaMAP  creates solutions for the complex and challenging issues surrounding water management in our country.</h4>
+                
+              </div>
+              <div class="col-md-2">
+                <div class="footer-logo">
+                  <img src="https://aquamap.iitm.ac.in/images/AquaMAP-6Apr22.png" class="footerlogo-2" alt="Aquamap">
+                </div>                
+              </div>              
+            </div>
+            <hr>
+            <div class="row">
+              <div class="footer-bottom">
+                <small>2022 © Copyrights. All rights reserved.</small>
+              </div>              
+            </div>
+    
+        </div>
+    </footer>
+
+    </div>
+</body>
+
+
+
+
+<style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffff;
+  margin: auto;
+}
+/* heading */
+
+
+h2{
+  
+  text-align: left;
+  font-weight: bold;
+}
+p{
+  text-align: left;
+  font-weight: 500;
+  padding:10px 0px 10px 0px;
+}
+
+/* Center website */
+.main {
+  /*max-width: 1000px;*/
+  margin: auto;
+  /*padding:30px 0px 30px 0px;*/
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+/* Add padding BETWEEN each column */
+ .column {
+  padding: 8px;
+  box-sizing:border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column { 
+ flex-basis: 33.33%;
+ display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+img{
+     max-width: 100%;
+    max-height: 200px;
+    width: auto;
+  
+}
+	.mainbody{
+		max-width: 1000px;
+		margin: auto;
+		padding-top: 30px;
+	}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: flex;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 5px 16px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'calibri';
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  width:135px;
+  height: 40px;
+}
+
+.btn:hover {
+  background-color: #fff;
+}
+
+.btn.active {
+  /* background-color: #666; */
+  color: #000; 
+}
+.btn-main{
+    padding: 10px 20px;
+    height: 45px;
+    font-family: 'calibri';
+    font-weight: 500;
+    font-size: 18px; 
+    border-radius: 2px; 
+    border: 1px solid #000000;  
+    color: #646464;
+    width: 150px;
+}
+.fa-solid {
+    padding-left: 20px;
+
+}
+.dropdown{
+    display: inline-block;
+    padding: 10px;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: #fff;
+    width: 150px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.dropdown-content:hover{
+    background-color: #fff;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* search box */
+#form{
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    padding: 5px;
+}
+#input{
+    all: unset;
+    font: 16px;
+    color: #000;
+    height: 100%;
+    width: 100%;
+    border: 0.5px;
+}
+::placeholder {
+    color: #646464;
+    opacity: 0.7; 
+}
+svg {
+    color: #000;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 3px;
+}
+.search-btn{
+    all: unset;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+#query{
+    border: 0px;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+}
+.publicationslist{
+  
+
+}
+	.publicationslist ul{
+		padding-left: 0px !important;
+	
+	}
+a{
+  text-decoration: none;
+}
+.outerlink:hover{
+  background-color: transparent;
+  color: #13BCC0;
+}
+.outerlink {
+  background-image: linear-gradient(
+    to right,
+    #13BCC0,
+    #13BCC0 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  /*padding: 5px 0;*/
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.outerlink:before{
+  content: '';
+  background: #13BCC0;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.outerlink:hover {
+ background-position: 0;
+}
+
+.outerlink:hover::before{
+  width: 100%;
+}
+.pulist{
+  list-style: none;
+}
+.publicationslistcontent{
+  font-size: 18px;
+}
+	/* insert svg into list*/
+	.listspoint li {
+    margin-bottom: 1rem;
+		list-style-type: none;
+    background: url( "svg/waterdrop.svg") no-repeat left top;
+    padding: 0px 0 3px 30px;
+}
+/*hr{
+        height: 3px;
+        background-color: #000000;
+        border: none;
+    }*/
+ 
+/* navbar */
+.navbar{
+        background: rgb(255,255,255);
+        background: linear-gradient(120deg, rgba(255,255,255,1) 27%, rgba(19,188,192,1) 25%);
+}
+.ms-auto{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0%;
+}
+.nav-item{
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'calibri';
+        margin-left: 20px;
+        display: inline-block;
+        padding: 10px;
+        white-space: nowrap;
+}
+.navbar-dark .navbar-nav .nav-link{
+        color: #fff;
+}
+.navbar-dark .navbar-toggler {
+        border-color: #fff;
+}
+.main-heading-content{
+  font-size: 30px;
+  font-family: "Montserrat", Sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #000;
+}
+.main-heading{
+  text-align: center;
+}
+/* hero img */
+.hero {
+  background: linear-gradient(#0006, #0006), url("images/case.png");
+/*   background-image: url(https://source.unsplash.com/2600x1200?city); */
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+/*   background-color: #eee; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.hero-inner {
+  
+/*   text-align: center; */
+  padding: 0 1.5rem;
+}
+/* footer */
+.footerbg{
+  background-color: #13BCC0;
+  max-width: 1600px;
+  
+}
+.footer{
+  padding: 50px 10px 10px 10px;
+
+}
+.footer-content{
+  color: #010101;
+  font-family: "Calibri Light", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 30px 10px 10px 10px;
+  text-align: center;
+}
+.footer-logo{
+  text-align: center;
+}
+.footerlogo-1{
+  width: 94px;
+  height: 94px;
+  padding: 0px;
+}
+.footerlogo-2{
+  width: 94px;
+  height: 105px;
+  padding: 0px;
+}
+.footer-bottom{
+  text-align: center;
+  font-family: "Montserrat", Sans-serif;
+  color: #0069B7;
+}
+.footer-bottom:hover{
+  color:#000;
+}
+
+
+
+/* mobile res */
+@media only screen and (max-width: 800px) {
+  .main{
+    padding: 10px;
+  }
+  .nav-item{
+    font-size: 16px;
+  }
+  .footer-content{
+    font-size: 16px;
+  }
+  .dropdown{
+    padding-bottom: 50px
+  }
+
+}
+</style>
+
+<script>
+    filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+// search box 
+
+    const f = document.getElementById('form');
+    const q = document.getElementById('query');
+    const google = 'https://www.google.com/search?q=site%3A+';
+    // const site = '#';
+    function submitted(event) {
+    event.preventDefault();
+    const url = google + site + '+' + q.value;
+    const win = window.open(url, '_blank');
+    win.focus();
+    }
+    f.addEventListener('submit', submitted);
+
+
+</script>

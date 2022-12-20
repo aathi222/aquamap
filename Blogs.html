@@ -100,32 +100,34 @@
       <p style="text-align: center;">The Latest Articles on Water and Environment.</p>
      </div>
     
-    <div id="myBtnContainer" style="text-align:center; padding: 20px 0px 20px 0px;">
+    <div id="myBtnContainer" style="text-align:center; padding: 20px 10px 20px 10px;">
       <div class="dropdown">
         <button class="btn" onclick="filterSelection('all')"> Show all</button>
       </div>
+     
+       <!--<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">-->
       
       <!-- search box -->
     <div class="dropdown">
       <form role="search" id="form">
-        <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+        <!--<input type="text" id="mySearch" name="q" onkeyup="myFunction()" placeholder="Search..." aria-label="Search through site content">-->
+        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category" style="border: none;">
         <button class="search-btn">
           <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
         </button>
     </div>
-
     <div class="dropdown">
       <button class="btn-main">Year<i class="fa-solid fa-angle-down" ></i></button>
       <div class="dropdown-content">
-        <li><button class="btn" onclick="filterSelection('Ascending')"> Ascending</button></li>
-        <li><button class="btn" onclick="filterSelection('Decending')"> Decending</button></li>       
+        <li><button class="btn" onclick="filterSelection('Ascending')">Latest</button></li>
+        <li><button class="btn" onclick="filterSelection('Desending')"> Oldest</button></li>       
         
       </div>
     </div>
     <div class="dropdown">
         <button class="btn-main">Region<i class="fa-solid fa-angle-down" ></i></button>
         <div class="dropdown-content">
-        <li><button class="btn" onclick="filterSelection('India'),('Ascending')"> India</button></li>
+        <li><button class="btn" onclick="filterSelection('India')"> India</button></li>
         <li><button class="btn" onclick="filterSelection('Global')"> Global</button></li>
         </div>
     </div> 
@@ -138,7 +140,7 @@
 		</br>
 <div class="row"> 
   <div class="publicationslist">
-  <ul style="list-style-type: disc" class="listspoint">
+  <ul style="list-style-type: disc" class="listspoint" id="myMenu">
 
       <li class="column India">
 		  <div style="width: 100%; margin-top: -4px;">
@@ -157,7 +159,7 @@
 		  <div style="width: 100%; margin-top: -4px;">
         <a href="https://www.downtoearth.org.in/blog/water/saving-the-degraded-river-basin-65931" style="color: #000" traget="_blank" class="outerlink">Saving the Degraded River Basin</a><hr size="5"></div></li>
       
-      <li class="column India">
+      <li class="column Global">
 		  <div style="width: 100%; margin-top: -4px;">
         <a href="https://www.downtoearth.org.in/blog/africa/across-africa-water-conflict-threatens-security-health-and-the-environment-86116" style="color: #000" traget="_blank" class="outerlink">Across Africa, water conflict threatens security, health and the environment</a><hr size="5"></div></li>
       
@@ -175,15 +177,15 @@
       
       <li class="column Global">
 		  <div style="width: 100%; margin-top: -4px;">
-        <a href="https://www.xylem.com/en-in/making-waves/water-utilities-news/paris-water-utility-uses-smartball-to-quickly-detect-pipeline-leaks/" style="color: #000" traget="_blank" class="outerlink">Paris water utility uses SmartBall to quickly detect pipeline leaks</a><hr size="5"></div></li>
+        <a href="https://www.xylem.com/en-in/making-waves/water-utilities-news/paris-water-utility-uses-smartball-to-quickly-detect-pipeline-leaks/" style="color: #000" traget="_blank" class="outerlink">Paris Water Utility Uses SmartBall to Quickly Detect Pipeline Leaks</a><hr size="5"></div></li>
       
       <li class="column Global">
 		  <div style="width: 100%; margin-top: -4px;">
-        <a href="https://www.xylem.com/en-in/making-waves/water-utilities-news/cop27-xylem-ceo-patrick-decker/" style="color: #000" traget="_blank" class="outerlink">COP27: The role of water in climate resiliency</a><hr size="5"></div></li>
+        <a href="https://www.xylem.com/en-in/making-waves/water-utilities-news/cop27-xylem-ceo-patrick-decker/" style="color: #000" traget="_blank" class="outerlink">COP27: The Role of Water in Climate Resiliency</a><hr size="5"></div></li>
       
       <li class="column Global">
 		  <div style="width: 100%; margin-top: -4px;">
-        <a href="https://www.xylem.com/en-in/making-waves/water-utilities-news/italian-island-solves-underwater-pipeline-leak-with-xylem/" style="color: #000" traget="_blank" class="outerlink">Italian island solves underwater pipeline leak with Xylem</a><hr size="5"></div></li>
+        <a href="https://www.xylem.com/en-in/making-waves/water-utilities-news/italian-island-solves-underwater-pipeline-leak-with-xylem/" style="color: #000" traget="_blank" class="outerlink">Italian Island Solves Underwater Pipeline Leak with Xylem</a><hr size="5"></div></li>
       
       <li class="column Global">
 		  <div style="width: 100%; margin-top: -4px;">
@@ -191,52 +193,107 @@
       
       <li class="column Global">
 		  <div style="width: 100%; margin-top: -4px;">
-        <a href="https://www.xylem.com/en-in/making-waves/water-utilities-news/plankton-wars-a-students-journey-to-solve-harmful-algae-blooms/" style="color: #000" traget="_blank" class="outerlink">Plankton wars: A student’s journey to solve harmful algae blooms</a><hr size="5"></div></li>
+        <a href="https://www.xylem.com/en-in/making-waves/water-utilities-news/plankton-wars-a-students-journey-to-solve-harmful-algae-blooms/" style="color: #000" traget="_blank" class="outerlink">Plankton Wars: A Student’s Journey to Solve Harmful Algae Blooms</a><hr size="5"></div></li>
       
       <li class="column Global">
 		  <div style="width: 100%; margin-top: -4px;">
-        <a href="https://www.xylem.com/en-in/making-waves/water-utilities-news/the-water-utility-of-the-future--from-smart-metering-to-digital-transformation/" style="color: #000" traget="_blank" class="outerlink">The water utility of the future – from smart metering to digital transformation</a><hr size="5"></div></li>
+        <a href="https://www.xylem.com/en-in/making-waves/water-utilities-news/the-water-utility-of-the-future--from-smart-metering-to-digital-transformation/" style="color: #000" traget="_blank" class="outerlink">The Water Utility of the Future – from Smart Metering to Digital Transformation</a><hr size="5"></div></li>
       
       <li class="column India">
 		  <div style="width: 100%; margin-top: -4px;">
-        <a href="https://efiblog.org/2012/11/19/efifenceit/" style="color: #000" traget="_blank" class="outerlink">A Pan India Lake Restoration Initiative To Restore Our Water Bodies</a><hr size="5"></div></li>
+        <a href="https://efiblog.org/2022/11/21/lakes-of-india-tiruvallur-water-bodies-restored-by-e-f-i/" style="color: #000" traget="_blank" class="outerlink">Lakes of India Tiruvallur Water Bodies Restored by EFI</a><hr size="5"></div></li>
+      
+      <li class="column India">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://efiblog.org/2022/11/29/the-twin-ponds-of-indias-water-capital-part-2/" style="color: #000" traget="_blank" class="outerlink">The Twin Ponds Of Indias Water Capital Part 2</a><hr size="5"></div></li>
+      
+      <li class="column India">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://efiblog.org/2022/11/15/saving-the-encroached-lake-of-chengalpet-part-2/" style="color: #000" traget="_blank" class="outerlink">Saving the Encroached Lake Of Chengalpet Part 2</a><hr size="5"></div></li>
+      
+      <li class="column India">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://efiblog.org/2022/10/29/restoring-sholinganallurs-lost-pond-satjhyavani-muthu-pond/" style="color: #000" traget="_blank" class="outerlink">Restoring Sholinganallurs Lost Pond Satjhyavani Muthu Pond</a><hr size="5"></div></li>
      
       <li class="column India">
 		  <div style="width: 100%; margin-top: -4px;">
-        <a href="https://efiblog.org/2022/11/21/lakes-of-india-tiruvallur-water-bodies-restored-by-e-f-i/" style="color: #000" traget="_blank" class="outerlink">LAKES OF INDIA – TIRUVALLUR WATER BODIES RESTORED BY E.F.I</a><hr size="5"></div></li>
+        <a href="https://efiblog.org/2022/10/27/tuticorins-grand-lake-authoor-lake/" style="color: #000" traget="_blank" class="outerlink">Tuticorins Grand Lake Author Lake</a><hr size="5"></div></li>
       
       <li class="column India">
 		  <div style="width: 100%; margin-top: -4px;">
-        <a href="https://efiblog.org/2022/11/29/the-twin-ponds-of-indias-water-capital-part-2/" style="color: #000" traget="_blank" class="outerlink">THE TWIN PONDS OF INDIA’S WATER CAPITAL – PART 2</a><hr size="5"></div></li>
-      
-      <li class="column India">
-		  <div style="width: 100%; margin-top: -4px;">
-        <a href="https://efiblog.org/2022/11/15/saving-the-encroached-lake-of-chengalpet-part-2/" style="color: #000" traget="_blank" class="outerlink">SAVING THE ENCROACHED LAKE OF CHENGALPET – PART 2</a><hr size="5"></div></li>
-      
-      <li class="column India">
-		  <div style="width: 100%; margin-top: -4px;">
-        <a href="https://efiblog.org/2022/10/29/restoring-sholinganallurs-lost-pond-satjhyavani-muthu-pond/" style="color: #000" traget="_blank" class="outerlink">RESTORING SHOLINGANALLUR’S LOST POND – SATHYAVANI MUTHU POND</a><hr size="5"></div></li>
-     
-      <li class="column India">
-		  <div style="width: 100%; margin-top: -4px;">
-        <a href="https://efiblog.org/2022/10/27/tuticorins-grand-lake-authoor-lake/" style="color: #000" traget="_blank" class="outerlink">TUTICORIN’S GRAND LAKE – AUTHOOR LAKE</a><hr size="5"></div></li>
-      
-      <li class="column India">
-		  <div style="width: 100%; margin-top: -4px;">
-        <a href="https://efiblog.org/2022/10/21/vannan-eri-reviving-kelambakkams-water-hope/" style="color: #000" traget="_blank" class="outerlink">VANNAN ERI – REVIVING KELAMBAKKAM’S WATER HOPE</a><hr size="5"></div></li>
-     
-      <li class="column India">
-		  <div style="width: 100%; margin-top: -4px;">
-        <a href="https://efiblog.org/2022/10/15/reviving-mega-lakes-of-tiruvallur/" style="color: #000" traget="_blank" class="outerlink">REVIVING MEGA LAKES OF TIRUVALLUR</a><hr size="5"></div></li>
-      
-      <li class="column India">
-		  <div style="width: 100%; margin-top: -4px;">
-        <a href="https://efiblog.org/2022/09/30/arunmozhithevan-fifty-years-later/" style="color: #000" traget="_blank" class="outerlink">ARUNMOZHITHEVAN Lake – FIFTY YEARS LATER</a><hr size="5"></div></li>
-      
+        <a href="https://efiblog.org/2022/10/21/vannan-eri-reviving-kelambakkams-water-hope/" style="color: #000" traget="_blank" class="outerlink">Vannan ERI Reviving Kelambakkams Water Hope</a><hr size="5"></div></li>
     
-  </ul>
+      <li class="column India">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://efiblog.org/2022/10/15/reviving-mega-lakes-of-tiruvallur/" style="color: #000" traget="_blank" class="outerlink">Reviving Mega Lakes Of Tiruvallur</a><hr size="5"></div></li>
+      
+      <li class="column India">
+		  <div style="width: 100%; margin-top: -4px;">
+        <a href="https://efiblog.org/2022/09/30/arunmozhithevan-fifty-years-later/" style="color: #000"   traget="_blank" class="outerlink"> Arunmozhithevan Fifty Years Later </a><hr size="5"></div></li>
+      
+           <li class="column India">
+      <div style="width: 100%; margin-top: -4px;">
+         <a href="https://youtu.be/5vsgVqsZ3Po" style="color: #000" traget="_blank" class="outerlink">Transforming Lives through the Power of Clean Water – a P&G and National Geographic Documentary </a><hr size="5"></div></li> 
+    
+     <li class="column India">
+      <div style="width: 100%; margin-top: -4px;">
+        <a href="https://youtu.be/XOl4dx9M8Zw" style="color: #000" traget="_blank" class="outerlink">Saboli Khadda-The Saga Continues.. </a><hr size="5"></div></li> 
+       
+      <li class="column India">
+        <div style="width: 100%; margin-top: -4px;">
+         <a href="https://youtu.be/GHnkwh4rEK8" style="color: #000" traget="_blank" class="outerlink">How improved sanitation in India is transforming lives - BBC Media Action </a><hr size="5"></div></li> 
+           
+      <li class="column India">
+        <div style="width: 100%; margin-top: -4px;">
+          <a href="https://youtu.be/WZgT2Vwfvwc" style="color: #000" traget="_blank" class="outerlink"> India's First Faecal Sludge Treatment Plant</a><hr size="5"></div></li> 
+               
+        <li class="column India">
+            <div style="width: 100%; margin-top: -4px;">
+            <a href="https://valuewater.co/" style="color: #000" traget="_blank" class="outerlink"> #VALUEWATER: 10 Ways to Save Water at Home</a><hr size="5"></div></li>  
+            
+         <li class="column India">
+            <div style="width: 100%; margin-top: -4px;">
+            <a href="https://chennaimetrowater.tn.gov.in/projects.html" style="color: #000" traget="_blank" class="outerlink">Chennai Metropolitan Water Supply and Sewerage Board - Projects</a><hr size="5"></div></li> 
+                
+          <li class="column India">
+            <div style="width: 100%; margin-top: -4px;">
+             <a href="https://chennaimetrowater.tn.gov.in/rwh.html" style="color: #000" traget="_blank" class="outerlink">Chennai Metropolitan Water Supply and Sewerage Board - Rain Water Harvesting</a><hr size="5"></div></li>
+                     
+          <li class="column India">
+           <div style="width: 100%; margin-top: -4px;">
+            <a href="https://chennaimetrowater.tn.gov.in/charter.html" style="color: #000" traget="_blank" class="outerlink">Chennai Metropolitan Water supply and Sewerage Board - Citizen's Charter</a><hr size="5"></div></li>
+                        
+            <li class="column India">
+              <div style="width: 100%; margin-top: -4px;">
+               <a href="https://careearthtrust.org/water-matters/" style="color: #000" traget="_blank" class="outerlink">Water Matters - Care Earth Trust</a><hr size="5"></div></li>              
+               
+            <li class="column India">
+              <div style="width: 100%; margin-top: -4px;">
+               <a href="https://ioe.iitm.ac.in/project/water-and-sustainability/" style="color: #000" traget="_blank" class="outerlink">Water and Sustainability</a><hr size="5"></div></li> 
+           
+               <li class="column India">
+                <div style="width: 100%; margin-top: -4px;">
+                 <a href="http://www.icwar.iisc.ac.in/research/aim/" style="color: #000"  traget="_blank" class="outerlink">Interdisciplinary Centre for Water Research (ICWaR) - IISc Bangalore</a><hr size="5"></div></li> 
+              </ul>
 </div>
 </div>
+<script>
+  function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myMenu");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+  </script>
     
     
   
@@ -288,11 +345,11 @@
     * {
   box-sizing: border-box;
 }
-
 body {
   background-color: #fffff;
   margin: auto;
 }
+
 /* heading */
 
 
@@ -306,6 +363,7 @@ p{
   font-weight: 500;
   padding:10px 0px 10px 0px;
 }
+
 
 /* Center website */
 .main {
@@ -348,14 +406,14 @@ img{
      max-width: 100%;
     max-height: 200px;
     width: auto;
-  
+    
 }
 	.mainbody{
 		max-width: 1000px;
 		margin: auto;
 		padding-top: 30px;
 	}
-
+ 
 /* The "show" class is added to the filtered elements */
 .show {
   display: flex;
@@ -568,7 +626,7 @@ a{
 }
 /* hero img */
 .hero {
-  background: linear-gradient(#0006, #0006), url( "banner images/blogs.png");
+  background: linear-gradient(#0006, #0006), url( "images/blogs.png");
 /*   background-image: url(https://source.unsplash.com/2600x1200?city); */
   background-position: bottom;
   background-size: cover;
@@ -629,7 +687,7 @@ a{
 
 
 /* mobile res */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .main{
     padding: 10px;
   }
@@ -639,6 +697,10 @@ a{
   .footer-content{
     font-size: 16px;
   }
+  .dropdown{
+    padding-bottom: 50px
+  }
+
 }
 </style>
 
@@ -651,6 +713,7 @@ function filterSelection(c) {
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+
   }
 }
 
@@ -699,7 +762,6 @@ for (var i = 0; i < btns.length; i++) {
     const win = window.open(url, '_blank');
     win.focus();
     }
-
     f.addEventListener('submit', submitted);
 
 
